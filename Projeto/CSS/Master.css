@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /*grid-template-columns: define quantidade de colunas*/
+    /*repeat repete 1fr 3 vezes*/
+    padding: 4px;
+}
+
+.grid-item {
+    padding: 4px;
+    font-size: 30px;
+    text-align: center;
+    grid-gap: 4px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 25px;
+}
+
+grid-column-start: 1;
+/*grid-column-start: define em qual coluna o item comecara a ocupar*/
+grid-column-end: 3;
+/*grid-column-end: define antes de qual coluna o item terminara de ocupar*/
+grid-row-start: 1;
+/*grid-row-start: define em qual linha o item comecara a ocupar*/
+grid-row-end: 3;
+/*grid-row-end: define antes de qual linha o item terminara de ocupar*/

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+        <link rel="stylesheet" href="CSS/main2.css"/>
+        <script src="JS/JQuery.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
+    </head>
+
+    <body>
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="PaginaInicial.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Jogos.html">Jogos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Formulario.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="PaginaInicial.html">Quem Somos</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+        <!-- FORMULÁRIO -->
+        <div class="container">
+            <h3>Contato</h3>
+            <hr>
+            <form method="post" action="http://adairsojr.ddns.net/processa_formulario.php" enctype="multipart/form-data" target="_blank">
+                <div class="form-group">
+                    <label  for="nome">Nome:</label>
+                    <input id="nome" class="form-control" type="text" name="nome" placeholder="digite seu Nome">
+                    <small id="msgnome" class="form-text text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label  for="telefone">Telefone:</label>
+                    <input id="telefone" type="number" class="form-control" id="telefone" placeholder="Digite um número para contato" name="telefone">
+                    <small id="msgtelefone" class="form-text text-danger"></small>
+                </div>
+                <div class="form-group">
+                    <label  for="email">E-mail:</label>
+                    <input id="email" type="text" class="form-control" name="email">
+                    <small id="msgemail" class="form-text text-danger"></small>
+                </div>
+                <div class="row">
+                    <div class="form-group col-7">
+                        <label  for="assunto">Assunto:</label>
+                        <input id="assunto" class="form-control" type="text" name="assunto" placeholder="digite o Assunto">
+                        <small id="msgassunto" class="form-text text-danger"></small>
+                    </div>
+                    <div class="form-group col-5">
+                        <label  for="msg">Mensagem:</label>
+                        <textarea id="msg" class="form-control" id="msg" name="usuario_msg"></textarea>
+                        <small id="msgmsg" class="form-text text-danger"></small>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>
+        <script src="JS/validacao.js"></script>
+
+    </body>
+</html>
